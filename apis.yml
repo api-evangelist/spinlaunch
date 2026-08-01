@@ -1,8 +1,26 @@
 aid: spinlaunch
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/spinlaunch.png
 name: SpinLaunch
-description: 'SpinLaunch is a company surfaced as a portfolio company of gv and added to the API Evangelist
-  network as a stub for enrichment. Sector: frontier-tech. This profile is a lead awaiting the enrichment
-  pipeline.'
+description: 'SpinLaunch is a space technology company developing a kinetic launch
+  system that uses a rotating carbon-fiber arm inside a large vacuum chamber to accelerate
+  launch vehicles to thousands of kilometers per hour before ignition, aiming to eliminate
+  up to 70 percent of the fuel and structure of a conventional rocket. It operates
+  a Suborbital Accelerator test facility at Spaceport America in New Mexico that doubles
+  as a customer payload-testing platform, and is developing an Orbital Launch System
+  alongside its Meridian satellite broadband constellation for enterprise connectivity.
+  Backed by GV, the company currently publishes no public developer API, documentation,
+  or SDK surface; this profile captures its identity and domain-security posture.'
 url: https://raw.githubusercontent.com/api-evangelist/spinlaunch/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +30,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
 - Frontier Tech
+- Space
+- Aerospace
+- Satellite
+- Launch Systems
+- Broadband
+- Space Technology
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +47,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/spinlaunch-domain-security.yml
 - type: Website
   url: https://www.spinlaunch.com
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
